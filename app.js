@@ -39,8 +39,8 @@ container.addEventListener('mouseleave', (e) => {
 //Mobile Browser Event
 
 container.addEventListener('touchmove', (e) => {
-    let xAxis = (window.innerWidth / 2 - e.touches[0].pageX) / 10 ;
-    let yAxis = (window.innerHeight / 2 - e.touches[0].pageY) / 10 ;
+    let xAxis = (window.innerWidth / 2 - e.touches[0].pageX) / 30 ;
+    let yAxis = (window.innerHeight / 2 - e.touches[0].pageY) / 30 ;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 })
 
