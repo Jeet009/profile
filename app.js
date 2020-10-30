@@ -12,11 +12,12 @@ container.addEventListener('mousemove', (e) => {
     console.log(e.innerHeight)
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
     let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+    card.style.transition = 'none';
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 })
 
 container.addEventListener('mouseenter', (e) => {
-    card.style.transition = 'none';
+    card.style.transition = 'all 0.5s ease';
     title.style.transform = 'translateZ(150px)'
     bio.style.transform = 'translateZ(150px)'
     image.style.transform = 'translateZ(100px)'
@@ -39,8 +40,8 @@ container.addEventListener('mouseleave', (e) => {
 //Mobile Browser Event
 
 container.addEventListener('touchmove', (e) => {
-    let xAxis = (window.innerWidth / 2 - e.touches[0].pageX) / 50 ;
-    let yAxis = (window.innerHeight / 2 - e.touches[0].pageY) / 50  ;
+    let xAxis = (window.innerWidth / 2 - e.touches[0].pageX) / 10 ;
+    let yAxis = (window.innerHeight / 2 - e.touches[0].pageY) / 10  ;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 })
 
