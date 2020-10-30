@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 10px;
   /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2); */
 }
@@ -51,6 +51,7 @@ body {
   border-bottom-color: rgba(164, 66, 245, 0.75);
   border-right-color: rgba(164, 66, 245, 0.75);
   border-radius: 50%;
+  transition: all 0.5s ease-out;
 }
 
 .circle {
@@ -64,6 +65,7 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+  transition: all 0.5s ease-out;
 }
 
 .info {
@@ -72,6 +74,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
+  transition: all 0.5s ease-out;
 }
 
 .socialIcon {
@@ -80,6 +83,7 @@ body {
   align-items: center;
   flex-direction: row;
   /* background-color: royalblue; */
+  transition: all 0.5s ease-out;
 }
 
 .socialIcon button {
@@ -96,6 +100,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: all 0.5s ease-out;
 }
 
 .button button {
