@@ -5,20 +5,24 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  align-self: center;
-  justify-content: center;
+  font-family: "Poppins", sans-serif !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-self: center !important;
+  justify-content: center !important;
+  width: 100%;
+  /* padding: 50px; */
+  /* height: 100%; */
+  /* margin-top: 200px; */
 }
-.container {
+.container-c {
   /* background-color: blue; */
-  width: 50%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card {
+.card-c {
   min-height: 80vh;
   width: 35rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
