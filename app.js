@@ -39,28 +39,20 @@ container.addEventListener('mouseleave', (e) => {
 //Mobile Browser Event
 
 container.addEventListener('touchmove', (e) => {
-    let xAxis = (window.innerWidth / 2 - e.touches[0].pageX) ;
-    let yAxis = (window.innerHeight / 2 - e.touches[0].pageY) ;
+    let xAxis = (window.innerWidth / 2 - e.touches[0].pageX) / 50 ;
+    let yAxis = (window.innerHeight / 2 - e.touches[0].pageY) / 50  ;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 })
 
 container.addEventListener('touchstart', (e) => {
     card.style.transition = 'none' 
-    title.style.transform = 'translateZ(150px)'
-    bio.style.transform = 'translateZ(150px)'
     image.style.transform = 'translateZ(100px)'
     circle.style.transform = 'translateZ(5px)'
-    social.style.transform = 'translateZ(90px)'
-    button.style.transform = 'translateZ(50px)'
 })
 
 container.addEventListener('touchend', (e) => {
     card.style.transition = 'all 0.5s ease' 
     card.style.transform = `rotateY(0deg) rotateX(0deg)`
-    title.style.transform = 'translateZ(0px); '
-    bio.style.transform = 'translateZ(0px); '
     image.style.transform = 'translateZ(0px); '
     circle.style.transform = 'translateZ(0px); '
-    social.style.transform = 'translateZ(0px); '
-    button.style.transform = 'translateZ(0px); '
 })
