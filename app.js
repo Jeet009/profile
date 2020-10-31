@@ -72,6 +72,6 @@ floatingButton.addEventListener('click', () => {
     //         getCanvas = canvas; 
     //     }
     // });
-    'whatsapp://send?text='+encodeURIComponent('./download (1).png')
+    
     // circle.classList.remove('d-none')
 })
