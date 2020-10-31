@@ -74,9 +74,14 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
-  transition: all 0.5s ease-out;
 }
 
+.title {
+  transition: all 0.5s ease-out;
+}
+.bio {
+  transition: all 0.5s ease-out;
+}
 .socialIcon {
   display: flex;
   justify-content: center;
@@ -116,6 +121,7 @@ body {
   margin-bottom: 20px;
   color: white;
   background-color: grey;
+  transition: all 0.5s ease-out;
 }
 
 .button a:hover {
@@ -145,4 +151,19 @@ a {
 .fa:hover {
   color: grey;
   text-decoration: none;
+}
+
+.floating-button .button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: grey;
+  color: white;
+  right: 0px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

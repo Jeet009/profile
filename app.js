@@ -7,6 +7,7 @@ const image = document.querySelector('.photo img')
 const circle = document.querySelector('.photo .circle')
 const social = document.querySelector('.socialIcon')
 const button = document.querySelector('.subscribe')
+const floatingButton = document.querySelector('.floating-button')
 
 container.addEventListener('mousemove', (e) => {
     console.log(e.innerHeight)
@@ -29,12 +30,12 @@ container.addEventListener('mouseenter', (e) => {
 container.addEventListener('mouseleave', (e) => {
     card.style.transition = 'all 0.5s ease' 
     card.style.transform = `rotateY(0deg) rotateX(0deg)`
-    title.style.transform = 'translateZ(0px); '
-    bio.style.transform = 'translateZ(0px); '
-    image.style.transform = 'translateZ(0px); '
-    circle.style.transform = 'translateZ(0px); '
-    social.style.transform = 'translateZ(0px); '
-    button.style.transform = 'translateZ(0px); '
+    title.style.transform = 'none'
+    bio.style.transform = 'none'
+    image.style.transform = 'none'
+    circle.style.transform = 'none'
+    social.style.transform = 'none'
+    button.style.transform = 'none'
 })
 
 //Mobile Browser Event
@@ -56,4 +57,21 @@ container.addEventListener('touchend', (e) => {
     card.style.transform = `rotateY(0deg) rotateX(0deg)`
     image.style.transform = 'translateZ(0px); '
     circle.style.transform = 'translateZ(0px); '
+})
+
+
+
+var getCanvas;  
+            
+floatingButton.addEventListener('click', () => {
+    // circle.classList.add('d-none')
+    // html2canvas(container, { 
+    //     background :'#FFFFFF',
+    //     onrendered: function(canvas) { 
+    //         container.append(canvas); 
+    //         getCanvas = canvas; 
+    //     }
+    // });
+    'whatsapp://send?text='+encodeURIComponent('./download (1).png')
+    // circle.classList.remove('d-none')
 })
