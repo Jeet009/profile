@@ -10,11 +10,25 @@ body {
   display: flex !important;
   align-self: center !important;
   justify-content: center !important;
-  /* width: 100%; */
-  /* padding: 50px; */
-  /* height: 100%; */
-  /* margin-top: 200px; */
   perspective: 1000px;
+  overflow-x: hidden;
+}
+.background-img {
+  background-image: url("https://wallpaperaccess.com/full/1775592.jpg");
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30%;
+}
+.overlay {
+  height: 30vh;
+  width: 100%;
+  background-color: rgba(19, 18, 17, 0.7);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30%;
 }
 .container-c {
   /* background-color: blue; */
@@ -28,21 +42,30 @@ body {
   min-height: 80vh;
   width: 25rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-  padding: 0rem 5rem;
+  /* padding: 0rem 5rem; */
   border-radius: 30px;
   transform-style: preserve-3d;
+  background-color: #ff816b;
+  color: white;
+}
+.desc {
+  text-align: center;
+  font-size: 12px;
+  transition: all 0.5s ease-out;
+}
+.hr {
+  border-top-color: white;
+  border-width: 1px;
+  width: 20%;
 }
 .photo {
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
-  margin-top: 10px;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2); */
 }
 .photo img {
-  width: 15rem;
+  width: 8rem;
   z-index: 2;
   border: solid;
   border-width: 1px;
@@ -55,12 +78,12 @@ body {
 }
 
 .circle {
-  width: 20rem;
-  height: 20rem;
+  width: 12rem;
+  height: 12rem;
   background: linear-gradient(
     to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(164, 66, 245, 0.75)
+    rgba(255, 255, 255, 0.75),
+    rgba(234, 210, 253, 0.75)
   );
   position: absolute;
   border-radius: 50%;
@@ -119,13 +142,13 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  color: white;
-  background-color: grey;
+  color: black;
+  background-color: white;
   transition: all 0.5s ease-out;
 }
 
 .button a:hover {
-  color: white;
+  color: #ff816b;
   text-decoration: none;
 }
 
@@ -144,12 +167,12 @@ a {
 }
 
 .fa {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
 .fa:hover {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
@@ -166,4 +189,17 @@ a {
   position: absolute;
   bottom: 50px;
   right: 10px;
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 480px) {
+  .card-c {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-c {
+    width: 18rem;
+  }
 }
