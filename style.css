@@ -10,10 +10,7 @@ body {
   display: flex !important;
   align-self: center !important;
   justify-content: center !important;
-  /* width: 100%; */
-  /* padding: 50px; */
-  /* height: 100%; */
-  /* margin-top: 200px; */
+  overflow-x: hidden;
   perspective: 1000px;
 }
 .container-c {
@@ -166,4 +163,16 @@ a {
   position: absolute;
   bottom: 50px;
   right: 10px;
+}
+/* Mobile Optimization */
+@media screen and (max-width: 480px) {
+  .card-c {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-c {
+    width: 19.8rem;
+  }
 }
