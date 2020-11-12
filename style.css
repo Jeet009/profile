@@ -194,12 +194,12 @@ a {
 /* Mobile Optimization */
 @media screen and (max-width: 480px) {
   .card-c {
-    width: 20rem;
+    width: 25rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .card-c {
-    width: 18rem;
+    width: 19.8rem;
   }
 }
