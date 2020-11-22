@@ -10,8 +10,25 @@ body {
   display: flex !important;
   align-self: center !important;
   justify-content: center !important;
-  overflow-x: hidden;
   perspective: 1000px;
+  overflow-x: hidden;
+}
+.background-img {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg");
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30%;
+}
+.overlay {
+  height: 30vh;
+  width: 100%;
+  background-color: rgba(19, 18, 17, 0.7);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30%;
 }
 .container-c {
   /* background-color: blue; */
@@ -25,26 +42,37 @@ body {
   min-height: 80vh;
   width: 25rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-  padding: 0rem 5rem;
+  /* padding: 0rem 5rem; */
   border-radius: 30px;
   transform-style: preserve-3d;
+  background-color: #34756a;
+  color: white;
+}
+.desc {
+  text-align: center;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.5s ease-out;
+}
+.hr {
+  border-top-color: white;
+  border-width: 1px;
+  width: 20%;
 }
 .photo {
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
-  margin-top: 10px;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2); */
 }
 .photo img {
-  width: 15rem;
+  width: 8rem;
   z-index: 2;
   border: solid;
   border-width: 1px;
-  border-top-color: rgba(245, 70, 66, 0.75);
-  border-left-color: rgba(245, 70, 66, 0.75);
+  border-top-color: rgba(51, 167, 151, 0.75);
+  border-left-color: rgba(51, 167, 151, 0.75);
   border-bottom-color: rgba(164, 66, 245, 0.75);
   border-right-color: rgba(164, 66, 245, 0.75);
   border-radius: 50%;
@@ -52,12 +80,12 @@ body {
 }
 
 .circle {
-  width: 20rem;
-  height: 20rem;
+  width: 12rem;
+  height: 12rem;
   background: linear-gradient(
     to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(164, 66, 245, 0.75)
+    rgba(255, 255, 255, 0.75),
+    rgba(210, 253, 244, 0.75)
   );
   position: absolute;
   border-radius: 50%;
@@ -104,10 +132,44 @@ body {
   transition: all 0.75s ease-out;
 }
 
+.button-outlined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.75s ease-out;
+}
+
 .button a {
   margin-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: black;
+  background-color: white;
+  transition: all 0.5s ease-out;
+}
+
+.button a:hover {
+  color: #34756a;
+  text-decoration: none;
+}
+.button-outlined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.75s ease-out;
+}
+.button-outlined a {
+  margin-top: 0px !important;
+  width: 50%;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -117,15 +179,15 @@ body {
   letter-spacing: 1px;
   margin-bottom: 20px;
   color: white;
-  background-color: grey;
+  border: solid 1px white;
+  background-color: transparent;
   transition: all 0.5s ease-out;
 }
 
-.button a:hover {
-  color: white;
+.button-outlined a:hover {
+  color: #78ecd9;
   text-decoration: none;
 }
-
 a {
   margin-top: 20px;
   padding-left: 15px;
@@ -141,12 +203,12 @@ a {
 }
 
 .fa {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
 .fa:hover {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
