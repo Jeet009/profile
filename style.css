@@ -25,7 +25,7 @@ body {
 .overlay {
   height: 30vh;
   width: 100%;
-  background-color: rgba(211, 211, 211, 0.7);
+  background-color: rgba(211, 211, 211, 0.356);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30%;
@@ -66,7 +66,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.photo img {
+.info img {
   width: 12rem;
   z-index: 2;
   /* border: solid;
@@ -98,7 +98,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .title {
