@@ -14,21 +14,22 @@ body {
   overflow-x: hidden;
 }
 .background-img {
-  background-image: url("./eight.jpg");
-  background-size: cover;
-  height: 30vh;
+  background-image: url("./cover.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25vh;
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  border-bottom-left-radius: 30%;
+  /* border-bottom-left-radius: 30%; */
 }
 .overlay {
-  height: 30vh;
+  height: 23vh;
   width: 100%;
   background-color: rgba(211, 211, 211, 0.356);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  border-bottom-left-radius: 30%;
+  /* border-bottom-left-radius: 30%; */
 }
 .container-c {
   /* background-color: blue; */
@@ -45,7 +46,7 @@ body {
   /* padding: 0rem 5rem; */
   border-radius: 30px;
   transform-style: preserve-3d;
-  background-color: #ffe7c2;
+  background-color: #ff841f94;
   color: #332a1c;
 }
 .desc {
@@ -151,7 +152,7 @@ body {
   letter-spacing: 1px;
   margin-bottom: 20px;
   color: #332a1c;
-  background-color: #dfbe8e;
+  background-color: #ff8139;
   transition: all 0.5s ease-out;
 }
 
@@ -177,14 +178,14 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  color: #332a1c;
-  border: solid 1px #dfbe8e;
+  color: #ff8139;
+  border: solid 1px #ff8139;
   background-color: transparent;
   transition: all 0.5s ease-out;
 }
 
 .button-outlined a:hover {
-  color: #332a1c;
+  color: #ff8139;
   text-decoration: none;
 }
 a {
